@@ -18,4 +18,18 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 export const db = firebase.firestore();
-export default firebase;
+
+export const sendMessage = async (name, message) => {
+    await db.collection("messages")
+        .add({
+            name,
+            message,
+            createAt: new Date()
+        })
+        .then(function (docRef) {
+            console.log("Document written with ID: ", docRef.id);
+        })
+        .catch(function (error) {
+            console.error("Error adding document: ", error);
+        });
+};
