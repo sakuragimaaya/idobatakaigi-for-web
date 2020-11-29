@@ -33,20 +33,3 @@ export const sendMessage = async (name, message) => {
             console.error("Error adding document: ", error);
         });
 };
-
-export const testFunc = async () => {
-
-    // Add a new document with a generated id.
-    await db.collection("cities").doc("LA").set({
-        name: "Los Angeles",
-        state: "CA",
-        country: "USA"
-    })
-        .then(function () {
-            console.log("Document successfully written!");
-            console.log("ここにもきてる");
-        })
-        .catch(function (error) {
-            console.error("Error writing document: ", error);
-        });
-}
