@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { sendMessage } from '../config/firebase';
+import { sendMessage } from '../Config/firebase';
 
 const Main = ({ name }) => {
     const [string, setString] = useState('');
 
-    const handleClick = () => {
-        sendMessage(name, string)
+    const handleClick = async () => {
+        await sendMessage(name, string)
         console.log(string)
         console.log(name)
+
     };
 
     return (
