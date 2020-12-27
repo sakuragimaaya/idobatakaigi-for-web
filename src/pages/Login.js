@@ -11,7 +11,7 @@ const Login = ({ setName }) => {
 
     return (
         <div className='login'>
-            <h1>井戸端会議 for web</h1>
+            <h1 className='font'> 井戸端会議 for web</h1>
             <TextField id="name" label="user" value={string} onChange={e => setString(e.target.value)} /><br />
             <Button variant="outlined" onClick={handleClick}>ログイン</Button>
         </div>

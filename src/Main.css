@@ -1,0 +1,70 @@
+
+body {
+    background-color:lightgreen;
+}
+.login{
+    text-align: center;
+    margin-top: 100px;
+    background-color: white;
+}
+.map{
+    background-color: white;
+    
+}
+.message{
+    width: 500px;
+}
+.kesu{
+    display: flex;
+}
+.kesu2{
+    width: 1360px;
+    padding: 20px;
+    border: solid lightgreen ;
+    border-radius: 20px;
+    padding-left: 40px;
+    background-color: lightgreen;
+}
+.idobata{
+    color: white;
+    display: flex;
+    font-size: 40px;
+    padding-left: 80px;
+    padding-top: 15px;
+    
+
+}
+.maaya{
+    padding-left: 300px;
+    font-size: 20px;
+    color: white;
+    padding-top:40px;
+    padding-left: 443.5px;
+    padding-right: 300px;
+}
+.hedda{
+    background-color: lightgreen ;
+    display: flex;
+    position: fixed;
+    top:0;
+    z-index:1000;
+    
+}
+.space{
+    border: solid 30px white;
+}
+.input{
+    display: flex;
+    padding-left: 80%;
+
+}
+.hahaha{
+    padding-top: 100px;
+}
+.bu{
+    border: solid 10px white;
+
+}
+.input .text{
+    width: 70%;
+}

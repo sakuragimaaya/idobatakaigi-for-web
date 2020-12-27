@@ -33,3 +33,4 @@ export const sendMessage = async (name, message) => {
             console.error("Error adding document: ", error);
         });
 };
+export default firebase;

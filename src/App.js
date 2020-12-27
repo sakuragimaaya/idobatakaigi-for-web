@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './App.css';
 import Login from './pages/Login';
 import Main from './pages/Main';
+import './Main.css';
 
 function App() {
   const [name, setName] = useState('')
